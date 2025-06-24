@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hand-forged custom knives by Blankenship Blades, a passionate bladesmith. Shop EDC, hunting, and kitchen knives made in the USA." />
+  <meta name="keywords" content="custom knives, handmade knives, artisan knives, bladesmith, EDC knives, forged knives, hunting knives, knives made in USA, custom blades, buy knives online" />
+  <meta name="author" content="Blankenship Blades" />
+  <title>Blankenship Blades | Custom Knifemaker</title>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.6.2/default/snipcart.css" />
+  <script async src="https://cdn.snipcart.com/themes/v3.6.2/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="YOUR_SNIPCART_PUBLIC_API_KEY"></div>
+  <style>
+    :root {
+      --bg: #121212;
+      --accent: #f9a26c;
+      --brown: #3a2e2a;
+      --text: #f0e9e1;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--brown);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      color: var(--accent);
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #1c1c1c;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .bio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .bio img {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid var(--accent);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border: 2px solid var(--brown);
+      border-radius: 8px;
+    }
+
+    .shop {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product {
+      background: #1e1e1e;
+      border-radius: 10px;
+      padding: 1rem;
+      border: 1px solid var(--brown);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .product h3 {
+      color: var(--accent);
+      margin: 0.5rem 0;
+    }
+
+    .product button {
+      background: var(--accent);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .contact input, .contact textarea {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 4px;
+      background: #2c2c2c;
+      color: var(--text);
+    }
+
+    .contact button {
+      background: var(--accent);
+      border: none;
+      padding: 0.5rem;
+      color: black;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1c1c1c;
+      font-size: 0.9rem;
+    }
+
+    a:hover, button:hover {
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blankenship Blades</h1>
+    <p>Custom Handmade Knives | Forged in the USA</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+    <a href="#" class="snipcart-checkout">🛒 Cart (<span class="snipcart-items-count"></span>)</a>
+  </nav>
+
+  <section id="about">
+    <h2>About the Maker</h2>
+    <div class="bio">
+      <img src="your-photo.jpg" alt="Your photo" />
+      <p>Hello, I'm the founder of Blankenship Blades, a self-taught bladesmith crafting high-quality, one-of-a-kind knives from raw materials with care and precision. Whether you're looking for an EDC blade, a hunting companion, or a showpiece, every knife I make is built to perform and last. Thanks for supporting small-batch American craftsmanship.</p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="knife1.jpg" alt="Knife 1" />
+      <img src="knife2.jpg" alt="Knife 2" />
+      <img src="knife3.jpg" alt="Knife 3" />
+    </div>
+  </section>
+
+  <section id="shop">
+    <h2>Shop</h2>
+    <div class="shop">
+      <div class="product">
+        <img src="knife1.jpg" alt="Knife 1" />
+        <h3>EDC Knife - Walnut Handle</h3>
+        <p>$225</p>
+        <button class="snipcart-add-item"
+          data-item-id="edc-walnut"
+          data-item-price="225.00"
+          data-item-url="/"
+          data-item-name="EDC Knife - Walnut Handle"
+          data-item-image="knife1.jpg">
+          Add to Cart
+        </button>
+      </div>
+      <div class="product">
+        <img src="knife2.jpg" alt="Knife 2" />
+        <h3>Bushcraft Knife - Micarta</h3>
+        <p>$195</p>
+        <button class="snipcart-add-item"
+          data-item-id="bushcraft-micarta"
+          data-item-price="195.00"
+          data-item-url="/"
+          data-item-name="Bushcraft Knife - Micarta"
+          data-item-image="knife2.jpg">
+          Add to Cart
+        </button>
+      </div>
+      <div class="product">
+        <img src="knife3.jpg" alt="Knife 3" />
+        <h3>Chef Knife - Damascus Steel</h3>
+        <p>$310</p>
+        <button class="snipcart-add-item"
+          data-item-id="chef-damascus"
+          data-item-price="310.00"
+          data-item-url="/"
+          data-item-name="Chef Knife - Damascus Steel"
+          data-item-image="knife3.jpg">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <p>Want a custom order or have questions? Drop me a message:</p>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Blankenship Blades | Handmade Knives | Based in the USA
+  </footer>
+</body>
+</html>
